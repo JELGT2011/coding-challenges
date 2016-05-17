@@ -5,7 +5,7 @@ import "fmt"
 var cache map[int]int
 var weights map[int]bool
 
-func knapsack(k int) int {
+func unboundedknapsack(k int) int {
 	if val, ok := cache[k]; ok {
 		return val
 	}
@@ -36,6 +36,6 @@ func main() {
 			fmt.Scanf("%d", &weight)
 			weights[weight] = true
 		}
-		fmt.Println(K - knapsack(K))
+		fmt.Println(K - unboundedknapsack(K))
 	}
 }
