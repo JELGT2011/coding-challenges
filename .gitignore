@@ -1,6 +1,9 @@
 
 ### Project ###
 
+*_files/
+*.html
+*.in
 .idea
 temp
 tmp
